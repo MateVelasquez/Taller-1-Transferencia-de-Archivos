@@ -70,6 +70,6 @@ workflows:
 notify:
   emails:
     recipients:
-      - "mateo.velasquez@udla.edu.ec"
+      - "matenico002@hotmail.com"
     on_success: change # Enviar notificación solo si hay cambios en el estado de éxito
     on_fail: always # Enviar notificación siempre en caso de fallo
