@@ -19,6 +19,7 @@ jobs:
   
   test-unit:
     executor: default-executor
+    parallelism: 2 # Ejecutar el job en paralelo
     steps:
       - checkout
       - run:
@@ -55,7 +56,6 @@ workflows:
       - test-unit:
           requires:
             - build
-          parallelism: 2 # Ejecutar este job en paralelo
       - test-integration:
           requires:
             - build
